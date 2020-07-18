@@ -1,14 +1,14 @@
-.navbar {
+.navbar-lewagon {
+  justify-content: space-between;
   background: white;
   box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-  justify-content: space-beween;
 }
 
-.navbar .navbar-collapse {
+.navbar-lewagon .navbar-collapse {
   flex-grow: 0;
 }
 
-.navbar-brand img {
+.navbar-lewagon .navbar-brand img {
   width: 56px;
   border-radius: 50%;
   box-shadow: 0 1px 2px rgba(0,0,0,0.2);
