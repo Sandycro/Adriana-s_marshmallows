@@ -1,10 +1,14 @@
-<center><h2 class="mt-4">Marshmallows for all occassions 🍭 🎂 🍬 </h2></center>
-<div class = "container categories">
-  <% @categories.each do |category| %>
-    <div class="card-category p-4" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(<%= image_path "somuchfun.jpg" %>)">
-      <div class="category-info">
-        <h2 class="category-title"><%= link_to category.name, category_path(category.id), class: "category-link" %></h2>
+<div class="container-top">
+  <div>
+    <center><h2 class="mt-4">Marshmallows for all occassions 🍭 🎂 🍬 </h2></center>
+  </div>
+  <div class = "container categories">
+    <% @categories.each do |category| %>
+      <div class="card-category p-4" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(<%= image_path "somuchfun.jpg" %>)">
+        <div class="category-info">
+          <h2 class="category-title"><%= link_to category.name, category_path(category.id), class: "category-link" %></h2>
+        </div>
       </div>
-    </div>
-  <% end %>
+    <% end %>
+  </div>
 </div>
