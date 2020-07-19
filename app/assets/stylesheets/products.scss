@@ -1,3 +1,44 @@
 // Place all the styles related to the products controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+.products {
+  max-width: 1000px;
+}
+
+.card-product {
+  overflow: hidden;
+  height: 170px;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top:20px;
+  border-radius: 9px;
+}
+
+.card-product img {
+  height: 100%;
+  width: 200px;
+  object-fit: cover;
+}
+
+.card-product h5 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-product p {
+  font-size: 12px;
+  line-height: 1.4;
+  opacity: .7;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: 8px;
+}
+
+.card-product-infos {
+  padding: 16px;
+  margin-left: 20px;
+}
