@@ -4,17 +4,17 @@
   justify-content: space-between !important;
   position: fixed;
   top: 0;
-  width: 100%;
-  z-index: 5000;
+  // width: 100%;
+  // z-index: 5000;
+}
+.navbar-light {
+  background-color: white;
 }
 
 .navbar-lewagon .navbar-collapse {
   flex-grow: 0;
 }
 
-.navbar-light {
-  background-color: white;
-}
 
 .navbar-lewagon .navbar-brand img {
   width: 56px;

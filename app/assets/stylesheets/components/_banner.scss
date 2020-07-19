@@ -3,6 +3,7 @@
   background-size: cover;
   padding: 100px 0;
   padding-top: 40vh;
+  margin-bottom: 20px;
   // height: 700px;
   height: 100vh;
   p {
@@ -10,6 +11,10 @@
   }
 }
 
-h2 {
-  color: pink;
+  h2 {
+    color: pink;
+  }
+
+.container {
+  margin-top: 50px;
 }
