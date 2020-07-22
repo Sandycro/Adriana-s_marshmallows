@@ -2,8 +2,8 @@ class ProductsController < ApplicationController
   skip_before_action :authenticate_user!, only: [:show, :new, :create]
 
   def show
+    # @category = Category.find(params[:category_id])
     @product = Product.find(params[:id])
-    @review = Review.new
   end
 
   def new
@@ -28,8 +28,8 @@ class ProductsController < ApplicationController
   end
 
   def update
-    @category = Category.find(params[:category_id])
     @product = Product.find(params[:id])
+    @category = Category.find(params[:category_id])
     if @product.update(product_params)
       redirect_to product_path(@product)
     else
@@ -39,6 +39,7 @@ class ProductsController < ApplicationController
 
   def destroy
     @product = Product.find(params[:id])
+    @category = @product.category
     @product.destroy
     redirect_to category_path(@product.category)
   end
